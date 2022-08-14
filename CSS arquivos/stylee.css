@@ -21,7 +21,7 @@ p {
     padding: 30px 700px 0px;
 }
 
-/*.primer {
+.primer {
 width: 250px;
 height: 200px;
 }
@@ -29,7 +29,7 @@ height: 200px;
 .segund {
 width: 200px;
 height: 170px;
-}*/
+}
 
 label {
 	font-size:12px;
@@ -43,7 +43,7 @@ li {
 
 
 
-/*@media screen and (min-with: 481px){
+*@media screen and (min-with: 481px){
     body:
-}*/
+}
 

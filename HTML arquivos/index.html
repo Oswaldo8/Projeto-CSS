@@ -4,14 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Portfolio</title>
+    <script src="formulario.js"></script>
     <link rel="stylesheet" href="/CSS arquivos/stylee.css">
     <link rel="stylesheet" href="/CSS arquivos/header.css">
-    <link rel="stylesheet" href="/CSS arquivos/footer.css">
+    <link rel="stylesheet" href="/CSS arquivos/footer.css">  
 </head>
 
 <body>
+    
     <header>
-        <div class="foto"><img src="/FOTOS IMG/Oswaldo1"></div>
+        <div class="foto"><img src="/FOTOS IMG/Oswaldo1."></div>
         <div class="nome">
             <h1> Oswaldo Garcia </h1>
         </div>
@@ -31,9 +33,9 @@
     <div>
         <p> Formado em engenharia Civil e gerenciamento de obras civis na Universidade Santiago Marino na Venezuela,
             tambem sou Mecanico em refrigeraçao de ar acondicioonado.
-            Ao longo das minhas experiencias na carreria e nas diferentes areas de trbalho que consegui me
-            desenvolver,sempre tive a oportunidade de ter contato com algum sistema o dsoftware
-            motivo pelo qual sinto uma grande curiosidade e vontade de aprender mais sobre a area de teconologia, para
+            Ao longo das minhas experiencias na carreria e nas diferentes areas de trabalho que consegui me
+            desenvolver,sempre tive a oportunidade de ter contato com algum sistema de software
+            motivo pelo qual sinto uma grande curiosidade e vontade de aprender mais sobre a area da teconologia, para
             evoluir tanto pessoal e prifissionalmente.Atualmente estou me formando na area de Frotn End com os programas
             de capacitaçao oferecido pela TOTI.
         </p>
@@ -41,7 +43,7 @@
 
     <hr>
     <div>
-        <h3>Listagem de trabalhos</h3>
+        <h3> Trabalhos</h3>
 
         <ul>
             <li>Engenheiro Residente e logistica Metron & SMG de Venezuela 2014-2015.</li>
@@ -94,7 +96,7 @@
 
     <hr>
 <footer>
-    <div class="iconos-sociales"></div>
+    
     <div> <h3 class="Redes_Sociais">Saiba mais</h3>
         <a href="https://www.instagram.com/oswaldo1g7" target="_blank"><img alt="Sígueme en Instagram"
                 src="https://1.bp.blogspot.com/-VFfOISywV0c/YPhkeRXuRQI/AAAAAAAAA1M/L75S9Usg5AovunH2Y-VzqJbaaY1LuK3eACPcBGAYYCw/s0/Instagram-icono.png"
@@ -103,19 +105,36 @@
                 alt="Sígueme en linkedin"
                 src=" https://1.bp.blogspot.com/-dxbuRx93Gcw/YP9u1JIFR5I/AAAAAAAAA10/2naDwGFmbeMLAGlZu7kEydnkY7ndur4jwCPcBGAYYCw/s0/linkedIn.icono.png"
                 title="Sígueme en linkedin" /></a>
+                <div class="icones-sociais"></div>
     </div>
 <div class="formulario">
     <form>
             <h2 id="Contato">Entre em contato:</h2>
-            <label for="fname">Nome:</label>
-            <input type="text" name="Nome" placeholder="oswaldo Garcia" required><br>
-            <br>
-            <label for="email">E-mail:</label>
-            <input type="email" placeholder="oswaldo.jg17@gmail.com" required><br>
-            <br>
-            <label for="note">Comentários:</label><br>
-
-            <textarea id="note" name="note" rows="6" cols="50" placeholder="Entrarei em contato em quanto seja posivel">
+           <div class="form-control">
+           <div class="formulario__grupo" id="grupo__nome">
+            <label for="nombre" class="formulario__label">Nome:</label>
+            <div class="formulario__grupo-input">    
+            <input type="text" class="formulario__input" name="nome" id="nome" placeholder="oswaldo Garcia" required><br></div>
+            <p class="formulario__input-error">O Nome debe conter so letras de 4 a 16 </p>
+            <small>Error message</small>
+        </div>
+            
+<br>
+<div class="form-control">
+<div class="formulario__grupo" id="grupo__correo">
+    <label for="correo" class="formulario__label">Correo Elcetronico:</label>
+    <div class="formulario__grupo-imput">    
+    <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com" required><br></div>
+    <p class="formulario__input-error">O correo so pode conter letras, numeros, pontos, e trazo. </p>
+    </div>   
+            
+            
+          
+            
+           
+   
+<label for="note">Mensaje:</label><br>
+<textarea id="note" name="note" rows="6" cols="50" placeholder="Entrarei em contato em quanto seja posivel">
                     </textarea>
             <br>
             <input type="submit" value="Enviar">
@@ -123,11 +142,7 @@
             <hr>
         <h3 class="Redes_Sociais">Obrigado por visitar o meu perfil</h3>
         </form>
-        
-    </div>
-
-    </footer>
+        </div>
+</footer>
 </body>
-
-
 </html>
