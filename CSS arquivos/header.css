@@ -1,0 +1,25 @@
+header {
+    justify-content: center;
+    display: flex; 
+    align-items: center;
+    background-color: #286090;
+    padding: 5rem 2rem;
+}
+
+.nome {
+    border: 0px solid #ccc;
+    color: #ffffff;
+    font-family: "Inter", sans-serif;
+    Text-align: center;
+font-size: 50px;
+}
+
+
+.foto {
+    width: 50px;
+    height: 50px;
+    top: 10px; 
+    left: 20px;
+    position: absolute;
+}
+
