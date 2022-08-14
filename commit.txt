@@ -2,3 +2,6 @@ teste "saiba mais" com tex-aline: center
 .Redes_Sociais {
     color: #ffffff;
     text-align: center;
+
+
+color: sinza mais claro no footer
